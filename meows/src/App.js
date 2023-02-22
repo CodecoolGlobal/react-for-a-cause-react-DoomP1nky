@@ -1,13 +1,15 @@
 import './App.css';
+
+import WelcomeComponent from './components/welcomeComponent'
 import AboutComponent from './components/AboutComponent';
 import DonationContactForm from './components/ContactComponent';
+
 
 function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
-      </header>
+      <WelcomeComponent />
       <AboutComponent />
       <DonationContactForm />
     </div>

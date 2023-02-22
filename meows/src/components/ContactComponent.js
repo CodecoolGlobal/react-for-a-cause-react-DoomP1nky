@@ -28,7 +28,7 @@ function DonationContactForm() {
     };
 
     return (
-        <div className="contactComponent">
+        <div id="contactComponent">
             {formSubmitted ? (
                 <div>
                     <p>
