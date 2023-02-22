@@ -37,67 +37,85 @@ function DonationContactForm() {
                     </p>
                 </div>
             ) : (
-                <form onSubmit={handleSubmit}>
-                    <label>
-                        First Name:
-                        <input
-                            type="text"
-                            name="firstName"
-                            value={formData.firstName}
-                            onChange={handleChange}
-                            required
-                        />
-                    </label>
-                    <br />
-                    <label>
-                        Last Name:
-                        <input
-                            type="text"
-                            name="lastName"
-                            value={formData.lastName}
-                            onChange={handleChange}
-                            required
-                        />
-                    </label>
-                    <br />
-                    <label>
-                        Email:
-                        <input
-                            type="email"
-                            name="email"
-                            value={formData.email}
-                            onChange={handleChange}
-                            required
-                        />
-                    </label>
-                    <br />
-                    <label>
-                        Phone:
-                        <input
-                            type="tel"
-                            name="phone"
-                            value={formData.phone}
-                            onChange={handleChange}
-                            placeholder="+36xxxxxxxxx"
-                            required
-                        />
-                    </label>
-                    <br />
-                    <label>
-                        Donation Amount:
-                        <input
-                            type="number"
-                            name="amount"
-                            value={formData.amount}
-                            onChange={handleChange}
-                            required
-                        />
-                    </label>
-                    <br />
-                    <button type="submit">Donate Now</button>
-                </form>
-            )}
-        </div>
+                <div className="card">
+                    <h2>Contact us</h2>
+                    <form onSubmit={handleSubmit}>
+                        <div className="row">
+                            <div className="col">
+                                <div className="form-group">
+                                    <label>First Name:</label>
+                                    <input
+                                        type="text"
+                                        name="firstName"
+                                        value={formData.firstName}
+                                        onChange={handleChange}
+                                        required
+                                    />
+                                </div>
+                            </div>
+                            <br />
+                            <div className="col">
+                                <div className="form-group">
+                                    <label>Last Name:</label>
+                                    <input
+                                        type="text"
+                                        name="lastName"
+                                        value={formData.lastName}
+                                        onChange={handleChange}
+                                        required
+                                    />
+                                </div>
+                            </div>
+                            <br />
+                            <div className="col">
+                                <div className="form-group">
+                                    <label>Email:</label>
+                                    <input
+                                        type="email"
+                                        name="email"
+                                        value={formData.email}
+                                        onChange={handleChange}
+                                        required
+                                    />
+                                </div>
+                            </div>
+                            <br />
+                            <div className="col">
+                                <div className="form-group">
+                                    <label>Phone:</label>
+                                    <input
+                                        type="tel"
+                                        name="phone"
+                                        value={formData.phone}
+                                        onChange={handleChange}
+                                        placeholder="+36xxxxxxxxx"
+                                        required
+                                    />
+                                </div>
+                            </div>
+                            <br />
+                            <div className="col">
+                                <div className="form-group">
+                                    <label>Donation Amount:</label>
+                                    <input
+                                        type="number"
+                                        name="amount"
+                                        value={formData.amount}
+                                        onChange={handleChange}
+                                        required
+                                    />
+                                </div>
+                            </div>
+                            <br />
+                            <div className="col">
+                                <button type="submit">Donate Now</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            )
+            }
+        </div >
     );
 }
 
