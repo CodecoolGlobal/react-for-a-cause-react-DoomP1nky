@@ -1,6 +1,6 @@
 import './App.css';
 import AboutComponent from './components/AboutComponent';
-/* import DonationContactForm from './components/ContactComponent'; */
+import DonationContactForm from './components/ContactComponent';
 
 function App() {
 
@@ -9,7 +9,7 @@ function App() {
       <header className="App-header">
       </header>
       <AboutComponent />
-      {/* <DonationContactForm /> */}
+      <DonationContactForm />
     </div>
   );
 }
