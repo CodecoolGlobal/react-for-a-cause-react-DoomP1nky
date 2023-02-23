@@ -38,7 +38,7 @@ function DonationContactForm() {
                 </div>
             ) : (
                 <div className="card">
-                    <h2>Contact us</h2>
+                    <h2>Donation for cats</h2>
                     <form onSubmit={handleSubmit}>
                         <div className="row">
                             <div className="col">
