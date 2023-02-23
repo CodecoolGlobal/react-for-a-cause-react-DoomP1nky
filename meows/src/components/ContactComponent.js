@@ -29,7 +29,6 @@ function DonationContactForm() {
 
     return (
         <div id="contactComponent">
-            <p>Contact</p>
             {formSubmitted ? (
                 <div>
                     <p>
@@ -108,7 +107,7 @@ function DonationContactForm() {
 
                                 </div>
                             </div>
-                        
+
                             <br />
                             <div className="col">
                                 <button type="submit">Donate Now</button>
