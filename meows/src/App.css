@@ -139,10 +139,22 @@ ul {
   align-items: center;
 }
 
-/*  */
+/* galery */
+.galery-container {
+  max-width: 50%;
+  height: 50%;
+  justify-content: center;
+  display: flex;
+  margin: auto;
+}
+
+.slider {
+  align-items: center;
+}
+
 .image {
-  width: min-content;
-  height: min-content;
+  width: 100%;
+  height: auto;
   border-radius: 10px;
 }
 
