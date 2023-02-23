@@ -18,6 +18,7 @@ body {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-weight: bold;
   font-size: 55px;
+  padding-left: 5%;
 }
 
 .AboutDescription {
@@ -94,6 +95,7 @@ li {
   box-shadow: 20px 20px 0 rgba(0, 0, 0, 0.3);
   border-radius: 50px;
   position: relative;
+  margin-bottom: 30px;
 }
 
 .card h2 {
