@@ -34,17 +34,38 @@ body {
 }
 
 /* navbar */
-.primary-header {
-  position: fixed;
-  top: 0;
-  width: 100%;
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
-ul {
-  list-style: none;
-  display: flex;
-  gap: 10px;
-  justify-content: center;
+li {
+  display: inline;
+}
+
+.navbar-container {
+  background-color: black;
+  overflow: hidden;
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+}
+
+.navbar-container a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 15px 18px;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: bold;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.navbar-container a:hover {
+  background-color: ghostwhite;
+  color: black;
 }
 
 /* contact form */

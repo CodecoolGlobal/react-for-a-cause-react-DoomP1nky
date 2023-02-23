@@ -22,18 +22,20 @@ const ImageSlider = ({ slides }) => {
     }
 
     return (
-        <div className='galery-container'>
-            <section className='slider'>
-                <FaArrowAltCircleRight className='right-arrow' onClick={nextSlide} />
-                <FaArrowAltCircleLeft className='left-arrow' onClick={prevSlide} />
-                {SliderData.map((slide, index) => {
-                    return (
-                        <div className={index === current ? 'slide active' : 'slide'} key={index}>
-                            {index === current && (<img src={slide.image} alt="cat image" className='image' />)}
-                        </div>
-                    )
-                })}
-            </section>
+        <div id='galery'>
+            <div className='galery-container'>
+                <section className='slider'>
+                    <FaArrowAltCircleRight className='right-arrow' onClick={nextSlide} />
+                    <FaArrowAltCircleLeft className='left-arrow' onClick={prevSlide} />
+                    {SliderData.map((slide, index) => {
+                        return (
+                            <div className={index === current ? 'slide active' : 'slide'} key={index}>
+                                {index === current && (<img src={slide.image} alt="cat image" className='image' />)}
+                            </div>
+                        )
+                    })}
+                </section>
+            </div>
         </div>
     )
 }
