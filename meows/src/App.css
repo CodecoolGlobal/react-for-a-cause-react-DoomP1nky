@@ -1,5 +1,5 @@
 body {
-  background-color: #f4d35e;
+  background-image: linear-gradient(#fdfcdc, #fed9b7);
 }
 
 #grid-container {
@@ -23,15 +23,62 @@ body {
 }
 
 /* navbar */
-.primary-header{
-    position: fixed;
-    top: 0;
-    width: 100%;
+.primary-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
-ul{
-    list-style: none;
-    display: flex;
-    gap: 10px;
-    justify-content: center;
+ul {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.slider {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  width: min-content;
+  height: min-content;
+  border-radius: 10px;
+}
+
+.right-arrow {
+  position: absolute;
+  right: 0;
+  font-size: 3rem;
+  color: black;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+  margin-right: 10px;
+}
+
+.left-arrow {
+  position: absolute;
+  left: 0;
+  font-size: 3rem;
+  color: black;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+  margin-left: 10px;
+}
+
+.slide {
+  opacity: 0;
+  transition-duration: 1s ease;
+}
+
+.slide.active {
+  opacity: 1;
+  transition-duration: 1s;
+  transform: scale(1.08);
 }
