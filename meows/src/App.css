@@ -9,6 +9,9 @@ body {
 
 .grid-item {
   display: inline-grid;
+  position: relative;
+  justify-content: center;
+  align-items: center;
 }
 
 .AboutText {
@@ -23,14 +26,28 @@ body {
 }
 
 .about--list {
-  display: block;
+  display: flex;
   justify-content: left;
+  flex-direction: column;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .about--listItem {
   font-size: 20px;
   padding: 20px;
+}
+
+.about--card {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  padding: 30px 90px 30px 90px;
+  border: 6px solid rgba(0, 0, 0, 0.3);
+  box-shadow: 20px 20px 0 rgba(0, 0, 0, 0.3);
+  border-radius: 50px;
 }
 
 /* navbar */
