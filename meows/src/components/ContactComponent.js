@@ -104,8 +104,10 @@ function DonationContactForm() {
                                         onChange={handleChange}
                                         required
                                     />
+
                                 </div>
                             </div>
+                        
                             <br />
                             <div className="col">
                                 <button type="submit">Donate Now</button>

@@ -1,8 +1,4 @@
-* {
-  margin: 0;
-  padding: 0;
-  border-size: border-box;
-}
+
 
 body {
   background-color: #f4d35e;
@@ -42,6 +38,7 @@ ul {
 }
 
 .card {
+  margin-left: 30px;
   width: 30%;
   padding: 30px 90px 30px 90px;
   border: 6px solid rgba(0, 0, 0, 0.3);
