@@ -29,6 +29,7 @@ function DonationContactForm() {
 
     return (
         <div id="contactComponent">
+            <p>Contact</p>
             {formSubmitted ? (
                 <div>
                     <p>
@@ -94,7 +95,7 @@ function DonationContactForm() {
                         />
                     </label>
                     <br />
-                    <button type="submit">Donate Now</button>
+                    <button type="submit">Donate for Cats</button>
                 </form>
             )}
         </div>
