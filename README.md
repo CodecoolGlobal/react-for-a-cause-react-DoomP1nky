@@ -22,8 +22,7 @@ Welcome to the Cat NGO website project! Our mission is to create a user-friendly
 
 ## Built With
 
-- [![React][React.js]][React-url]
-- [![Next][Next.js]][Next-url]
+- [React](https://react.dev/)
 
 ## Getting Started
 
